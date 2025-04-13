@@ -9,7 +9,8 @@ export default defineConfig({
       output: {},
     },
     "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": "src",
+    outDir: 'dist'
   },
   },
 });
