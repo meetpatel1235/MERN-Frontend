@@ -18,7 +18,7 @@ const Jobs = () => {
     const fetchJobs = async () => {
       try {
         setLoading(true);
-        const { data } = await axios.get("http://localhost:4000/api/v1/job/getall", {
+        const { data } = await axios.get("https://mern-backend-176x.onrender.com/api/v1/job/getall", {
           withCredentials: true,
         });
         setJobs(data.jobs || []);
